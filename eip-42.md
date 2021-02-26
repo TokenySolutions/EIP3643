@@ -18,7 +18,7 @@ This standard provides a library of interfaces for the management and transfer o
 
 ## Abstract
 
-Standards should be backwards compatible with ERC-20 ([#20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)) and should be able to interact with ERC-735 to validate the claims linked to an ONCHAINID, based on ERC-734 and ERC-735. <br>
+Standards should be backwards compatible with ERC-20 ([#20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)) and should be able to interact with ERC-735 ([#735](https://github.com/ethereum/EIPs/issues/735)) to validate the claims linked to an ONCHAINID, based on ERC-734 ([#734](https://github.com/ethereum/EIPs/issues/734)) and ERC-735. <br>
 The standard defines several interfaces that are described hereunder :
 - Token 
 - Identity Registry
@@ -57,7 +57,7 @@ Transfers of securities can fail for a variety of reasons. This is in direct con
 These conditions can be related to the status of an investor’s wallet, the identity of the sender and receiver of the securities (i.e. whether they
 have been through a KYC process, whether they are accredited or an affiliate of the issuer) or for reasons unrelated to the specific transfer but instead set at
 the token level (i.e. the token contract enforces a maximum number of investors or a cap on the percentage held by any single investor). <br>
-For ERC-20  tokens, the `balanceOf` and `allowance` functions provide a way to check that a transfer is likely to succeed before executing the transfer, which can be
+For ERC-20 ([#20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)) tokens, the `balanceOf` and `allowance` functions provide a way to check that a transfer is likely to succeed before executing the transfer, which can be
 executed both on-chain and off-chain. <br>
 For tokens representing securities, the T-REX standard introduces a function `canTransfer` which provides a more general purpose way to achieve this. I.e. when the reasons for
 failure are related to the compliance rules of the token and a function `isVerified` which allows to check the eligibility status of the identity of the investor.
@@ -77,7 +77,7 @@ Transfers of securities can fail for a variety of reasons in contrast to utility
 
 ## Specification
 
-This standard is backwards compatible with ERC-20, therefore, all ERC-20 functions can be called on an ERC-42 token, the interfaces being compatible.
+This standard is backwards compatible with ERC-20 ([#20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)), therefore, all ERC-20 functions can be called on an ERC-42 token, the interfaces being compatible.
 But the functions are not implemented in the same way as a classic ERC-20 as ERC-42 is a permissioned token, which implies a check to be performed on each single
 token transfer to validate the compliance of the transfer and the eligibility of the stakeholder’s identities.
 
