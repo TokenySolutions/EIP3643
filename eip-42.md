@@ -1,5 +1,5 @@
 ---
-eip: 42
+eip: 42 (final number to be confirmed)
 title: T-REX - Token for Regulated EXchanges
 authors: Joachim Lebrun, Tony Malghem, Kevin Thizy, Luc Falempin, Adam Boudjemaa
 type: Standards Track
@@ -8,6 +8,8 @@ status: Draft
 require: ERC-20 , ERC-734, ERC-735, ERC-1822
 created: 2020-12-22
 ---
+
+### Note : we use the EIP n°42 in this proposition document but the final number needs to be determined by an EIP Editor, nonetheless the n°42 will be used until we have a final EIP number to refer to.
 
 ## Simple Summary
 
