@@ -5,7 +5,7 @@ import "./IIdentityRegistry.sol";
 import "./ICompliance.sol";
 
 ///interface
-interface IERC42 is IERC20 {
+interface IERC3643 is IERC20 {
 
    /**
     *  this event is emitted when the token information is updated.
